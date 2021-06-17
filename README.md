@@ -1,3 +1,3 @@
-# pripley.github.io
+# Eleven Fifty Assignments
 
-Repository for all Eleven Fifty projects
+A collection of my completed projects for the Eleven Fifty Web Development course
