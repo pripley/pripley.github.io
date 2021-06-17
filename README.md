@@ -1,3 +1,3 @@
 # Eleven Fifty Assignments
 
-A collection of my completed projects for the Eleven Fifty Web Development course
+<a href="/static-layout/">Static Layout</a>
