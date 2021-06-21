@@ -1,3 +1,3 @@
-# pripley.github.io
+# Eleven Fifty Assignments
 
-Repository for all Eleven Fifty projects
+<a href="/static-layout/">Static Layout</a>
