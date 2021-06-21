@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="api.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <title>COVID-19 API Challenge</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="search">
+            <h1>COVID-19 Around the World</h1>
+            <p>Please select a country to view its latest data on the Coronavirus</p>
+            <form>
+                <select>
+                    <option>Please select a country </option>
+                </select>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+        <div id="results">
+            <h2 id="country"></h2>
+            <p id="new-confirmed"></p>
+            <p id="total-confirmed"></p>
+            <p id="new-deaths"></p>
+            <p id="total-deaths"></p>
+            <p id="new-recovered"></p>
+            <p id="total-recovered"></p>
+        </div>
+    </div>
+    <script src="api.js"></script>
+</body>
+
+</html>
