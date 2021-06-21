@@ -1,4 +1,4 @@
 # Eleven Fifty Assignments
 
-<a href="/static-layout/">Static Layout</a>
-<a href="/covid-api/">Static Layout</a>
+<p><a href="/static-layout/">Static Layout</a></p>
+<p><a href="/covid-api/">COVID API</a></p>
