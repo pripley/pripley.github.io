@@ -1,12 +1,13 @@
 const baseURL = "https://api.covid19api.com/summary";
 
 fetch(baseURL)
-.then((response) => response.json())
-.then((json) => {
+.then(response => response.json())
+.then(json => {
     let countries = json.Countries;
 
-    const searchData = document.querySelector("form");
-    const selectItems = document.querySelector("select");
+    const searchData = document.querySelector('form');
+    const selectItems = document.querySelector('select');
+    const results = document.getElementById('results')
 
     // Populates countries in dropdown
     for (let c of countries) {
@@ -19,16 +20,20 @@ fetch(baseURL)
     searchData.addEventListener("submit", function (e) {
       e.preventDefault();
 
+      while (results.firstChild) { 
+        results.removeChild(results.firstChild); 
+      }
+
       let selectedItem = selectItems.selectedIndex;
       selectedItem--;
 
-      let country = document.getElementById('country') 
-      let newConfirmed = document.getElementById('new-confirmed');
-      let totalConfirmed = document.getElementById('total-confirmed');
-      let newDeaths = document.getElementById('new-deaths');
-      let totalDeaths = document.getElementById('total-deaths');
-      let newRecovered = document.getElementById('new-recovered');
-      let totalRecovered = document.getElementById('total-recovered');
+      let country = document.createElement('h2') 
+      let newConfirmed = document.createElement('p');
+      let totalConfirmed = document.createElement('p');
+      let newDeaths = document.createElement('p');
+      let totalDeaths = document.createElement('p');
+      let newRecovered = document.createElement('p');
+      let totalRecovered = document.createElement('p');
 
       country.innerText = countries[selectedItem].Country
       newConfirmed.innerText = `Newly confirmed cases:  ${countries[selectedItem].NewConfirmed}`;
@@ -37,5 +42,14 @@ fetch(baseURL)
       totalDeaths.innerText = `Total deaths:  ${countries[selectedItem].TotalDeaths}`;
       newRecovered.innerText = `Newly recovered:  ${countries[selectedItem].NewRecovered}`;
       totalRecovered.innerText = `Total recovered:  ${countries[selectedItem].TotalRecovered}`;
+
+      results.appendChild(country)
+      results.appendChild(newConfirmed)
+      results.appendChild(totalConfirmed)
+      results.appendChild(newDeaths)
+      results.appendChild(totalDeaths)
+      results.appendChild(newRecovered)
+      results.appendChild(totalRecovered)
+
     });
   });
