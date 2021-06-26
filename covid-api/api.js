@@ -36,12 +36,13 @@ fetch(baseURL)
       let totalRecovered = document.createElement('p');
 
       country.innerText = countries[selectedItem].Country
-      newConfirmed.innerText = `Newly confirmed cases:  ${countries[selectedItem].NewConfirmed}`;
-      totalConfirmed.innerText = `Total confirmed cases:  ${countries[selectedItem].TotalConfirmed}`;
-      newDeaths.innerText = `New deaths:  ${countries[selectedItem].NewDeaths}`;
-      totalDeaths.innerText = `Total deaths:  ${countries[selectedItem].TotalDeaths}`;
-      newRecovered.innerText = `Newly recovered:  ${countries[selectedItem].NewRecovered}`;
-      totalRecovered.innerText = `Total recovered:  ${countries[selectedItem].TotalRecovered}`;
+
+      newConfirmed.innerHTML = `Newly confirmed cases:  <strong>${countries[selectedItem].NewConfirmed}</strong>`;
+      totalConfirmed.innerHTML = `Total confirmed cases:  <strong>${countries[selectedItem].TotalConfirmed}</strong>`;
+      newDeaths.innerHTML = `New deaths:  <strong>${countries[selectedItem].NewDeaths}</strong>`;
+      totalDeaths.innerHTML = `Total deaths:  <strong>${countries[selectedItem].TotalDeaths}</strong>`;
+      newRecovered.innerHTML = `Newly recovered:  <strong>${countries[selectedItem].NewRecovered}</strong>`;
+      totalRecovered.innerHTML = `Total recovered:  <strong>${countries[selectedItem].TotalRecovered}</strong>`;
 
       results.appendChild(country)
       results.appendChild(newConfirmed)
