@@ -60,7 +60,8 @@ p {
 }
 
 strong {
-  font-weight: 800;
+  font-weight: 700;
+  margin-left: 1rem;
 }
 
 select {
