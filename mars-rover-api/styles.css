@@ -1,0 +1,191 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #292b2c;
+  margin: 0rem;
+  height: 100%;
+}
+
+h1 {
+  font-size: 7rem;
+  font-weight: 400;
+  margin: 0 3rem;
+  color: white;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin: 0 0 2rem;
+}
+
+h3{
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.nav-link {
+  font-size: 1.4rem;
+}
+
+#banner {
+  height: 30rem;
+  padding: 2rem;
+  background-image: url("./assets/mars_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+#banner p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0 3rem;
+  color: white;
+}
+
+#rovers {
+  margin-top: 4rem
+}
+
+.rover {
+  margin: 0 2.5rem
+}
+
+#rovers .wrapper {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#sort {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+#results {
+  margin: 1rem 2rem 5rem 
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;  
+  max-width: 1200px;
+  align-items: center;
+}
+
+
+
+
+
+form {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+strong {
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+select {
+  width: 30rem;
+  padding: 1rem;
+  margin: 2rem 1rem;
+  font-size: 1.4rem;
+  border-color: #aaa;
+  box-sizing: border-box;
+  height: 4rem;
+}
+
+#photos {
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:left
+}
+
+.card {
+  width: 21rem;
+  margin: 1rem;
+  border-color: #aaa;
+  border-radius: 0;
+}
+
+.card button {
+  height: 100%;
+  margin: 0;
+  padding: 1rem;
+  background-color: white;
+  border: none;
+  color: #292b2c;
+  text-align: left;
+  font-size: 1.2rem;
+  border-radius: 0;
+  border: 0
+}
+
+.card button.btn-primary:hover {
+  background-color: rgb(218, 218, 218);
+  border: 0;
+  color:#292b2c;  
+}
+
+.card button.btn-primary:active {
+  background-color: rgb(218, 218, 218);
+  border: 0;
+  color:#292b2c;  
+}
+
+.card button.btn-primary:focus {
+  background-color: rgb(218, 218, 218);
+  border: 0;
+  color:#292b2c;  
+  box-shadow: 0 0 0 0.25rem rgb(100 100 100 / 50%);
+}
+
+label {
+  margin: 0rem 1rem;
+}
+
+button {
+  width: auto;
+  padding: 1rem 2rem;
+  margin: 2rem 1rem;
+  border: none;
+  background-color: #4e4e4e;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  height: 4rem;
+}
+
+button:hover {
+  background-color: #3a3a3a;
+  transition: 0.3s;
+}
+
+.modal-dialog {
+  max-width: 60%;
+}
