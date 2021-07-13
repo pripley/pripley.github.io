@@ -1,0 +1,277 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  margin: 0rem;
+  height: 100%;
+  background-color: white;
+}
+
+section {
+  padding: 5rem 3rem;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-dark-grey {
+  color: #333;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+  color: #333;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 3rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+}
+
+/* Navigation */
+
+.navbar {
+  position: absolute;
+  padding: 3rem 8rem;
+  width: 100%;
+}
+
+.navbar-brand {
+  margin-right: 4rem;
+  padding-right: 4rem;
+}
+
+.navbar-brand .logo {
+  width: 6rem;
+}
+
+.navbar-nav {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.nav-item {
+  margin-right: 2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: white;
+}
+
+.navbar .fab {
+  margin: 0 1rem;
+}
+
+/* Header */
+
+#header {
+  min-height: 85rem;
+  background-color: #7a7a7a;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../assets/header_bg.png");
+  display: flex;
+  align-items: center;
+}
+
+.photo img {
+  max-width: 30rem;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+/* Work */
+
+#work h2 {
+  font-size: 8rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+
+#work .row {
+  padding-bottom: 6rem;
+  margin-bottom: 6rem;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+#work .row:last-child {
+  border-bottom: none;
+}
+
+#work .button {
+  display: flex;
+}
+
+#work a {
+  color: white;
+  padding: 1rem 3rem;
+  width: 20rem;
+  margin: 2rem 0rem;
+  text-decoration: none;
+  border: none;
+  background-color: #7a7a7a;
+  border-radius: 10rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+#work a:hover {
+  background-color: #575757;
+  transition: 0.3s;
+}
+
+.thumbnail {
+  padding-right: 2rem;
+}
+
+.description {
+  padding-left: 4rem;
+}
+
+/* About */
+
+#about {
+  min-height: 4rem;
+  background-color: rgb(241, 241, 241);
+}
+
+#about h2 {
+  font-size: 8rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+
+#about p {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  line-height: 4rem;
+}
+
+#about a {
+  color: white;
+  padding: 1rem 3rem;
+  width: 20rem;
+  margin: 2rem 0rem;
+  text-decoration: none;
+  border: none;
+  background-color: #7a7a7a;
+  border-radius: 10rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+#about a:hover {
+  background-color: #575757;
+  transition: 0.3s;
+}
+
+/* Contact */
+
+#contact h2 {
+  font-size: 8rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  width: 100%;
+  border: 1px solid #b3b3b3;
+}
+
+form button {
+  padding: 1rem 3rem;
+  width: 20rem;
+  margin: 2rem 0rem;
+  border: none;
+  background-color: #7a7a7a;
+  color: white;
+  border-radius: 10rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+form button:hover {
+  background-color: #575757;
+  transition: 0.3s;
+}
+
+/* Footer */
+
+footer {
+  min-height: 30rem;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  width: 4rem;
+}
+
+footer .wrapper {
+  width: 1200px;
+}
+
+footer p {
+  color: white;
+}
+
+footer .social-icons {
+  text-align: right;
+}
+
+footer .fab {
+  margin: 0 1rem;
+}
