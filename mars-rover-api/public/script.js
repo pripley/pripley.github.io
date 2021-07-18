@@ -62,11 +62,16 @@ function populateMenu(rover) {
 
 // Fetches photos based on camera view selection
 function getPhotos() {    
-  if (camera.value !== "All camera views") {
-    url += `&camera=${camera.value}`;
+  let camVal = camera.value
+  
+  if (camVal === 'All camera views'){
+    newurl = url.replace(`&camera=`, '')  
+  } else {
+    newurl = url.replace(`&camera=`, '')
+    newurl += `&camera=${camVal}`;
   }
 
-  fetch(url)
+  fetch(newurl)
     .then(function (result) {
       return result.json();
     })
